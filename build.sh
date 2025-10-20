@@ -1,1 +1,1 @@
-gcc src/main.c src/vec3.c src/quat.c -o main -lm -Iinclude/
+gcc -g src/main.c src/vec3.c src/quat.c -o main -lm -Iinclude/

@@ -1,7 +1,8 @@
 #pragma once
 
-#include <vec3.h>
+#include "vec3.h"
 #include <math.h>
+
 
 typedef struct {
 	float w;
@@ -14,3 +15,4 @@ typedef struct {
 quat quat_normalize(quat q);
 quat vec_to_quat(vec3 v1);
 quat quat_mul(quat q1, quat q2);
+quat quat_rotate(float theta, vec3 axis, vec3 v);
